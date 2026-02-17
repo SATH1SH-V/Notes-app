@@ -1,0 +1,126 @@
+/* variables */
+:root {
+  --bg-main: #121212;
+  --bg-card: #2c2c2c;
+  --bg-input: #3a3a3a;
+
+  --primary: #f5c542;
+  --danger: #d9534f;
+
+  --text-main: #ffffff;
+  --text-dark: #000000;
+
+  --success-bg: #2e7d32;
+  --success-text: #e8f5e9;
+
+  --error-bg: #b71c1c;
+  --error-text: #ffebee;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  padding: 30px;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.plus {
+  background: var(--primary);
+  color: var(--text-dark);
+  padding: 2px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Form Design */
+.note-form,
+.note-card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.note-form {
+  display: none; 
+}
+
+
+label {
+  font-weight: bold;
+}
+
+/* input design */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: none;
+  border-radius: 6px;
+  background: var(--bg-input);
+  color: var(--text-main);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+button {
+  background: var(--primary);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Action */
+.actions button {
+  background: #444;
+  color: var(--text-main);
+  margin-left: 5px;
+}
+
+.actions .delete {
+  background: var(--danger);
+}
+
+/* Status */
+.status {
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+.status.success {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.status.error {
+  background: var(--error-bg);
+  color: var(--error-text);
+}
